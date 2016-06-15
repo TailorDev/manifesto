@@ -20,8 +20,8 @@ their everyday work (software, data analysis, web servers, etc.), the code
 should be open and stored in a public forge that eases community contributions
 and explicitly states on its licensing and credits.
 
-If relevant for the scientific community, scientific data collected by the
-Company should be stored in a public repository that explicitly states on its
+If relevant for the scientific community, scientific data collected by [the
+Company] should be stored in a public repository that explicitly states on its
 licensing and credits. [The Company] should carefully pay attention to the
 repository terms & conditions before submitting data to this repository.
 Institutional repositories (such as [Zenodo](https://zenodo.org)) must be the
@@ -45,12 +45,12 @@ to the common goods, not as products.
 
 Being open does not mean sharing everything with no respect for privacy. Hence,
 [the Company] must provide a way for its customers to keep their data private
-until they decide to free their content. The company must incentive, not force
+until they decide to free their content. [The company] must incentive, not force
 to share though.
 
 ## Investors must embrace this Manifesto
 
 If [the Company] is raising funds, incoming investors must accept all rules
 stated in this Manifesto without any modification. To prevent further corruption
-of the Company values, [the Company] statuses deposited to the administration of
+of [the Company] values, [the Company] statuses deposited to the administration of
 the country of affiliation should refer to this Manifesto.
