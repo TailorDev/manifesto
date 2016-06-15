@@ -22,7 +22,7 @@ and explicitly states on its licensing and credits.
 
 If relevant for the scientific community, scientific data collected by the
 Company should be stored in a public repository that explicitly states on its
-licensing and credits. The Company should carefully pay attention to the
+licensing and credits. [The Company] should carefully pay attention to the
 repository terms & conditions before submitting data to this repository.
 Institutional repositories (such as [Zenodo](https://zenodo.org)) must be the
 primary choice, but, third-party repositories can also be considered if the
