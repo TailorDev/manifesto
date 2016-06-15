@@ -1,0 +1,40 @@
+---
+---
+
+{% for p in site.pages %}
+{% if p.url contains '/version/' and p.current %}
+{{ p.content }}
+{% endif %}
+{% endfor %}
+
+<h3>Versions</h3>
+
+<ul>
+{% for p in site.pages %}
+{% if p.url contains '/version/' %}
+    <li>
+        <a href="{{ p.url }}">
+            {% assign name = p.name|replace:'.md','' %}
+            {% if p.current %}
+                <strong>{{ name }}</strong>
+            {% else %}
+                {{ name }}
+            {% endif %}
+        </a>
+        created on {{ p.created_at|date_to_long_string }}
+        {% if p.status %}(status: {{ p.status }}){% endif %}
+    </li>
+{% endif %}
+{% endfor %}
+</ul>
+
+
+<h3>Adopters</h3>
+
+<ul>
+    {% for adopter in site.data.adopters %}
+    <li>
+        <a href="{{ adopter.url }}">{{ adopter.name }}</a>
+    </li>
+    {% endfor %}
+</ul>

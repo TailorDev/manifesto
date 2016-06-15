@@ -1,0 +1,8 @@
+# Add yourself as an adopter of the Open Science Company Manifesto by adding a
+# new YAML entry at the bottom of the file:
+#
+# - name: Your company name
+#   url: https://example.org/
+#
+- name: TailorDev
+  url: https://tailordev.fr/
