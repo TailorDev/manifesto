@@ -1,0 +1,53 @@
+---
+---
+
+body
+{
+    color: #222831;
+    background-color: #fefefe;
+
+    a
+    {
+        color: #00adb5;
+    }
+
+    h1,
+    h2,
+    h3
+    {
+        color: #393e46;
+    }
+
+    h1,
+    h2
+    {
+        font-variant: small-caps;
+    }
+
+    h2
+    {
+        margin-top: 3rem;
+    }
+
+    p
+    {
+        line-height: 1.9rem;
+
+        text-align: justify;
+    }
+
+    ul
+    {
+        list-style: none outside;
+    }
+    .content
+    {
+        font-family: 'Times New Roman', Georgia, serif;
+        font-size: 1.4rem;
+
+        max-width: 800px;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 1rem;
+    }
+}

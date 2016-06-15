@@ -1,4 +1,6 @@
 ---
+layout: default
+title: Open Science Company Manifesto
 ---
 
 {% for p in site.pages %}
@@ -7,12 +9,15 @@
 {% endif %}
 {% endfor %}
 
+<hr />
+
+
 <h3>Versions</h3>
 
-<ul>
+<ul class="versions">
 {% for p in site.pages %}
 {% if p.url contains '/version/' %}
-    <li>
+    <li class="version">
         <a href="{{ p.url }}">
             {% assign name = p.name|replace:'.md','' %}
             {% if p.current %}
@@ -31,9 +36,9 @@
 
 <h3>Adopters</h3>
 
-<ul>
+<ul class="adopters">
     {% for adopter in site.data.adopters %}
-    <li>
+    <li class="adopter">
         <a href="{{ adopter.url }}">{{ adopter.name }}</a>
     </li>
     {% endfor %}
