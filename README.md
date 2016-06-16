@@ -5,14 +5,18 @@ This repository hosts the sources of the "Open Science Company Manifesto",
 which aims at defining fundamental statements every Company running with
 the Open Science initiative in mind must respect and promote.
 
+**Important:** all textual contents of the manifesto can be found in the
+[`version/` folder](version/). Other files are used to build the website.
+More information are given below.
+
 ## Project Home Page
 
-You can browse the online version at: http://manifesto.tailordev.fr/.
+You can browse the **online version** at: http://manifesto.tailordev.fr/.
 
 ## Versioning
 
 This manifesto is versioned, so that you can adhere to a particular version
-of it. All versions are located in the [`version/`](version/) directory.
+of it. All versions are located in the [`version/` folder](version/).
 
 ## Contributing
 
