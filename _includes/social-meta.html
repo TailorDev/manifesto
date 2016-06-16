@@ -1,0 +1,18 @@
+<!-- Google -->
+<meta name="description" content="{{ site.description }}">
+<meta name="author" content="{{ site.author }}">
+<meta name="keywords" content="Open Science, Company, Manifesto" />
+<meta name="copyright" content="{{ site.author }}" />
+<meta name="application-name" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }} {{ page.name|replace:'.md','' }}{% endif %}" />
+
+<!-- Facebook -->
+<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }} {{ page.name|replace:'.md','' }}{% endif %}" />
+<meta property="og:site_name" content="{{ site.author }}" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+<meta property="og:description" content="{{ site.description }}" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }} {{ page.name|replace:'.md','' }}{% endif %}" />
+<meta name="twitter:description" content="{{ site.description }}" />
