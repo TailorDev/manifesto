@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width initial-scale=1">
 
-    <title>{{ page.title }}</title>
+    <title>{% if page.title %}{{ page.title }}{% else %}The Open Science company Manifesto {{ page.name|replace:'.md','' }}{% endif %}</title>
 
     <link rel="stylesheet" href="/css/styles.css">
   </head>
@@ -16,7 +16,14 @@
     <div class="content">
         {{ content }}
     </div>
-
+    <footer>
+        <p>You can contribute to this page by <a href="https://github.com/TailorDev/manifesto/edit/gh-pages/{{ page.path }}">editing it on GitHub</a>.</p>
+        <p>
+            This content is licensed under a
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>, publicly released
+            and hosted on <a href="https://github.com/TailorDev/manifesto">GitHub</a>.
+        </p>
+    </footer>
   </body>
 
 </html>

@@ -40,7 +40,7 @@ body
     {
         list-style: none outside;
     }
-    .content
+    .content, footer
     {
         font-family: 'Times New Roman', Georgia, serif;
         font-size: 1.4rem;
@@ -49,5 +49,20 @@ body
         margin-right: auto;
         margin-left: auto;
         padding: 1rem;
+    }
+
+    footer
+    {
+        font-size: 0.9rem;
+        max-width: 450px;
+        border-top: 1px solid gray;
+        padding-top: 0.5rem;
+        color: gray;
+    }
+
+    footer p
+    {
+        text-align: center;
+        line-height: 1rem;
     }
 }
