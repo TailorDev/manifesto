@@ -6,9 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width initial-scale=1">
 
-    <title>{% if page.title %}{{ page.title }}{% else %}The Open Science company Manifesto {{ page.name|replace:'.md','' }}{% endif %}</title>
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }} {{ page.name|replace:'.md','' }}{% endif %}</title>
 
     <link rel="stylesheet" href="/css/styles.css">
+
+    <!-- Social meta -->
+    {% include social-meta.html %}
   </head>
 
   <body>
