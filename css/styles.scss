@@ -10,6 +10,9 @@ body {
   padding: 0;
   color: $body-font-color;
   background-color: $body-background-color;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  line-height: 2rem;
+  font-size: 1.2rem;
 
   a {
     color: $primary-color;
@@ -23,15 +26,18 @@ body {
   h2,
   h3 {
     color: $heading-font-color;
-  }
-
-  h1,
-  h2 {
     font-variant: small-caps;
   }
 
+  h1 {
+    line-height: 3rem;
+  }
+
+  h2 {
+    line-height: 2.5rem;
+  }
+
   p {
-    line-height: 1.9rem;
     text-align: justify;
   }
 
@@ -64,7 +70,7 @@ body {
 
         li {
           display: inline-block;
-          margin: 0.5rem 1rem 0 0;
+          margin: 0 1rem 0 0;
 
           a {
             color: $body-background-color;
@@ -82,22 +88,20 @@ body {
   .content {
     @include fixed_width_centered;
 
-    font-family: "Times New Roman", Georgia, serif;
-    font-size: 1.4rem;
     padding: .1rem 2rem 1rem;
     background-color: $content-background-color;
 
     h2 {
       clear: both;
       float: left;
-      width: calc(30% - 1rem);
+      width: calc(35% - 1rem);
       padding-right: 1rem;
     }
 
     p + p,
     h2 + p {
       float: right;
-      width: 70%;
+      width: 65%;
     }
 
     p + p {
@@ -114,7 +118,7 @@ body {
 
     p {
       text-align: center;
-      line-height: 1rem;
+      line-height: 1.4rem;
     }
   }
 }
