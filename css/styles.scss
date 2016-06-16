@@ -112,6 +112,7 @@ body {
   footer {
     @include fixed_width_centered($max-width: 450px);
 
+    margin-bottom: 2rem;
     padding-top: .5rem;
     color: $footer-font-color;
     font-size: .9rem;
