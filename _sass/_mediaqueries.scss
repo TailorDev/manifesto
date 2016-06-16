@@ -1,10 +1,12 @@
 @media (max-width: 800px) {
   body {
-
     header {
       nav {
         ul {
-          margin: 0 1rem;
+          li {
+            margin: 0 0 0 .5rem;
+            font-size: 0.9rem;
+          }
         }
       }
     }
