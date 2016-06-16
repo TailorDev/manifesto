@@ -1,0 +1,22 @@
+@media (max-width: 800px) {
+  body {
+    .content {
+      h2 {
+        clear: none;
+        float: none;
+        width: 100%;
+        padding-right: 0;
+      }
+
+      p + p,
+      h2 + p {
+        float: none;
+        width: 100%;
+      }
+
+      p + p {
+        clear: none;
+      }
+    }
+  }
+}
