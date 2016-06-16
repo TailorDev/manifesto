@@ -18,14 +18,12 @@ title: Open Science Company Manifesto
 {% for p in site.pages %}
 {% if p.url contains '/version/' %}
     <li class="version">
-        <a href="{{ p.url }}">
-            {% assign name = p.name|replace:'.md','' %}
-            {% if p.current %}
-                <strong>{{ name }}</strong>
-            {% else %}
-                {{ name }}
-            {% endif %}
-        </a>
+    {% assign name = p.name|replace:'.md','' %}
+    {% if p.current %}
+        <a href="{{ p.url }}"><strong>{{ name }}</strong></a>
+    {% else %}
+        <a href="{{ p.url }}">{{ name }}</a>
+    {% endif %}
         created on {{ p.created_at|date_to_long_string }}
         {% if p.status %}(status: {{ p.status }}){% endif %}
     </li>
