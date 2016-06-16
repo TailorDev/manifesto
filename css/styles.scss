@@ -1,68 +1,86 @@
 ---
 ---
+@charset "utf-8";
 
-body
-{
-    color: #222831;
-    background-color: #fefefe;
+@import "colors",
+        "mixins";
 
-    a
-    {
-        color: #00adb5;
+body {
+  margin: 0;
+  padding: 0;
+  color: $body-font-color;
+  background-color: $body-background-color;
+
+  a {
+    color: $primary-color;
+  }
+
+  h1,
+  h2,
+  h3 {
+    color: $heading-font-color;
+  }
+
+  h1,
+  h2 {
+    font-variant: small-caps;
+  }
+
+  p {
+    line-height: 1.9rem;
+    text-align: justify;
+  }
+
+  ul {
+    list-style: none outside;
+  }
+
+  .clear {
+    clear: both;
+    width: 50%;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid lighten($body-font-color, 60%);
+  }
+
+  .content {
+    @include fixed_width_centered;
+
+    font-family: "Times New Roman", Georgia, serif;
+    font-size: 1.4rem;
+    padding: .1rem 2rem 1rem;
+    background-color: $content-background-color;
+
+    h2 {
+      clear: both;
+      float: left;
+      width: calc(30% - 1rem);
+      padding-right: 1rem;
     }
 
-    h1,
-    h2,
-    h3
-    {
-        color: #393e46;
+    p + p,
+    h2 + p {
+      float: right;
+      width: 70%;
     }
 
-    h1,
-    h2
-    {
-        font-variant: small-caps;
+    p + p {
+      clear: right;
     }
+  }
 
-    h2
-    {
-        margin-top: 3rem;
+  footer {
+    @include fixed_width_centered($max-width: 450px);
+
+    padding-top: .5rem;
+    color: $footer-font-color;
+    font-size: .9rem;
+
+    p {
+      text-align: center;
+      line-height: 1rem;
     }
-
-    p
-    {
-        line-height: 1.9rem;
-
-        text-align: justify;
-    }
-
-    ul
-    {
-        list-style: none outside;
-    }
-    .content, footer
-    {
-        font-family: 'Times New Roman', Georgia, serif;
-        font-size: 1.4rem;
-
-        max-width: 800px;
-        margin-right: auto;
-        margin-left: auto;
-        padding: 1rem;
-    }
-
-    footer
-    {
-        font-size: 0.9rem;
-        max-width: 450px;
-        border-top: 1px solid gray;
-        padding-top: 0.5rem;
-        color: gray;
-    }
-
-    footer p
-    {
-        text-align: center;
-        line-height: 1rem;
-    }
+  }
 }
