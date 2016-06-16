@@ -1,5 +1,14 @@
 @media (max-width: 800px) {
   body {
+
+    header {
+      nav {
+        ul {
+          margin: 0 1rem;
+        }
+      }
+    }
+
     .content {
       h2 {
         clear: none;
