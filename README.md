@@ -5,9 +5,9 @@ This repository hosts the sources of the "Open Science Company Manifesto",
 which aims at defining fundamental statements every Company running with
 the Open Science initiative in mind must respect and promote.
 
-**Important:** all textual contents of the manifesto can be found in the
+**Important:** All textual contents of the manifesto can be found in the
 [`version/` folder](version/). Other files are used to build the website.
-More information are given below.
+More information is given below.
 
 ## Project Home Page
 
