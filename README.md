@@ -2,7 +2,7 @@ The Open Science Company Manifesto
 ==================================
 
 This repository hosts the sources of the "Open Science Company Manifesto",
-which aims at defining fundamental statements every Company running with
+which aims at defining fundamental statements that every company running with
 the Open Science initiative in mind must respect and promote.
 
 **Important:** all textual contents of the manifesto can be found in the
